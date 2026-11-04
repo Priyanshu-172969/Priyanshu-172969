@@ -2,10 +2,11 @@
   <img src="assets/profile-banner.svg" alt="Priyanshu Bid, student developer: Python, SQL, data analytics, web apps" width="100%">
 </div>
 
-
 ## About
-I'm an undergraduate student developing my foundations in data science, programming and software development. I enjoy working with Python, SQL and data-driven applications, with a particular interest in turning ideas and raw data into practical, working solutions.
-My approach is centred on learning by building, experimenting with practical solutions, and continuously improving their reliability and usability.
+
+I'm an engineering undergraduate aiming for a career in data science. Most of my time goes into Python, SQL and building things that actually run, rather than notebooks that stop at a chart.
+
+My two main projects so far are a Flask and MySQL travel planner for Indian heritage sites, and a Streamlit dashboard built on IPL cricket data. I learn by building something small, getting it to work, then making it less fragile. Next on my list is statistics and machine learning fundamentals.
 
 ## Featured projects
 
