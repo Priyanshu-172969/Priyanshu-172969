@@ -127,4 +127,22 @@ This prevents the root-level and nested copies from drifting apart.
 - Technologies are listed according to the projects in this profile.
 - Statistics cards from third-party services have intentionally been omitted; the native GitHub contribution calendar and contribution snake provide activity context without depending on a separate statistics host.
 
+
+## 8. What was cleaned up
+
+The profile repository was normalized so that each asset has one canonical location.
+
+- Rewrote `README.md` with clearer project descriptions and more consistent section structure.
+- Updated the existing banner text to use the confirmed name `Priyanshu Kr Bid`.
+- Kept the existing banner artwork; no new profile image was generated.
+- Organized the existing project technology graphics under `assets/projects/`.
+- Organized technology stack graphics under `assets/stack/`.
+- Organized contact graphics under `assets/connect/`.
+- Removed the old duplicate SVG copies from the repository root after placing the canonical copies in their intended folders.
+- Removed the unused learning graphic; current learning areas are written as text in the README.
+- Kept the contribution-snake workflow and its generated `output` branch. The workflow already uses the `crazy-max/ghaction-github-pages@v5.0.0` publishing action.
+- Omitted third-party statistics cards so the README does not depend on external statistics hosts.
+
+The removed root-level duplicates remain in Git history. They do not need to be restored or uploaded again.
+
 Update the README whenever a project's status, demo URL, or technology stack materially changes.
