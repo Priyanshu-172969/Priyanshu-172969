@@ -126,6 +126,5 @@ This prevents the root-level and nested copies from drifting apart.
 - YatraSetu is described as near completion and not deployed.
 - Technologies are listed according to the projects in this profile.
 - Statistics cards from third-party services have intentionally been omitted; the native GitHub contribution calendar and contribution snake provide activity context without depending on a separate statistics host.
-- BharatVerse is intentionally excluded from this profile work.
 
 Update the README whenever a project's status, demo URL, or technology stack materially changes.
