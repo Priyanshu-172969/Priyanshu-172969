@@ -82,9 +82,9 @@ The following tools and technologies are represented in my current project work.
 My contribution snake is generated automatically through GitHub Actions.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priy anshu-172969/Priy anshu-172969/output/github-snake-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priy anshu-172969/Priy anshu-172969/output/github-snake.svg">
-  <img alt="GitHub contribution graph represented as a snake animation" src="https://raw.githubusercontent.com/Priy anshu-172969/Priy anshu-172969/output/github-snake.svg" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Priyanshu-172969/Priy anshu-172969/output/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Priyanshu-172969/Priy anshu-172969/output/github-snake.svg">
+  <img alt="GitHub contribution graph represented as a snake animation" src="https://raw.githubusercontent.com/Priyanshu-172969/Priy anshu-172969/output/github-snake.svg" width="100%">
 </picture>
 
 ## Connect With Me
