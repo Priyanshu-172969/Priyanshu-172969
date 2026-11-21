@@ -10,7 +10,7 @@
 </div>
 
 <p align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1200&color=38BDF8&center=true&vCenter=true&multiline=false&width=620&lines=%F0%9F%91%8B+Hey+there!+I'm+Priyanshu+Kr+Bid;Sophomore+%40+NIT+Durgapur+%F0%9F%8E%93;Building+with+Python+%7C+SQL+%7C+AI%2FML+%F0%9F%A7%AC;From+Data+to+Decisions+%E2%80%94+one+project+at+a+time+%F0%9F%9A%80"
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=1200&color=38BDF8&center=true&vCenter=true&multiline=false&width=620&lines=%F0%9F%91%8B+Hey+there!+I'm+Priyanshu;Building+with+Python+%7C+SQL+%7C+AI%2FML+%F0%9F%A7%AC;From+Data+to+Decisions+%E2%80%94+one+project+at+a+time+%F0%9F%9A%80"
         alt="Typing SVG" />
 </p>
 
@@ -39,7 +39,7 @@
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg">
-    <img src="assets/terminal.svg" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, Hindi, and basic German." width="100%">
+    <img src="assets/terminal.svg" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, and Hindi." width="100%">
   </picture>
 </div>
 
@@ -50,28 +50,15 @@
 <img align="right" width="280" src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcXR3M2J5a3VhZmp0OWd5MWd2Y2d4OGZ1NWNiOHV6Ym5tNXd4NiZlcD12MV9naWZzX3NlYXJjaCZjdD1n/qgQUggAC3Pfv687qPC/giphy.gif" alt="Coding GIF"/>
 
 ```yaml
-name: Priyanshu Kr Bid
-located_in: Durgapur, West Bengal, India 🇮🇳
-education:
-  degree: B.Tech Biotechnology
-  institute: NIT Durgapur (2025–2029)
-  year: Sophomore
-
-currently_learning:
-  - Data Science & Machine Learning
-  - Statistics & Probability
-  - Data Structures & Algorithms
-  - Generative AI & AI-powered tools
+name:       Priyanshu Kr Bid
+college:    National Institute of Technology, Durgapur
+location:   Durgapur, West Bengal, India 🇮🇳
+degree:     B.Tech Biotechnology (Second Year)
 
 interests:
   - Data-driven problem solving
   - Biotech × AI intersection
   - Building practical software tools
-
-fun_facts:
-  - 🏏 Cricket enthusiast (player + watcher)
-  - 📚 Reads philosophy & spirituality
-  - 🎬 Binge-watches web series
 ```
 
 <br clear="right"/>
