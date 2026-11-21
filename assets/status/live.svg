@@ -1,1 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="116" height="28" viewBox="0 0 116 28" role="img" aria-labelledby="t d"><title id="t">Live demo</title><desc id="d">Green live demo status chip.</desc><rect x=".5" y=".5" width="115" height="27" rx="13.5" fill="#0D241D" stroke="#22543D"/><circle cx="14" cy="14" r="4" fill="#22C55E"/><text x="25" y="18.5" font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" fill="#B7F7CE">LIVE DEMO</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="116" height="28" viewBox="0 0 116 28" role="img" aria-labelledby="t d">
+<title id="t">Live demo</title><desc id="d">Green live demo status chip with a softly pulsing indicator.</desc>
+<rect x=".5" y=".5" width="115" height="27" rx="13.5" fill="#0D241D" stroke="#22543D"/>
+<circle class="pulse" cx="14" cy="14" r="4" fill="#22C55E"/>
+<text x="25" y="18.5" font-family="ui-sans-serif,Segoe UI,Arial,sans-serif" font-size="11" font-weight="600" fill="#B7F7CE">LIVE DEMO</text>
+<style>
+@keyframes live-pulse{0%,100%{opacity:1}50%{opacity:.4}}
+.pulse{animation:live-pulse 2s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style></svg>
