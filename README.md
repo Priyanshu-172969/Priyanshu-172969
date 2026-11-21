@@ -1,5 +1,8 @@
 <div align="center">
-  <img src="assets/profile-banner.svg" alt="Priyanshu Kr Bid | B.Tech Undergraduate | Software Development, Data Science and AI/ML" width="100%">
+  <picture>
+    <source media="(max-width: 600px)" srcset="assets/profile-banner-mobile.svg">
+    <img src="assets/profile-banner.svg" alt="Priyanshu Kr Bid | B.Tech Undergraduate | Software Development, Data Science and AI/ML" width="100%">
+  </picture>
 </div>
 
 <div align="center">
@@ -19,7 +22,10 @@ My recent work includes ScoreSense, where I cleaned IPL match-level and ball-by-
 
 ## Currently Learning
 
-<img src="assets/learning.svg" alt="Currently learning statistics and probability, machine learning fundamentals, data structures and algorithms, SQL and relational concepts, and web development" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/learning-mobile.svg">
+  <img src="assets/learning.svg" alt="Currently learning statistics and probability, machine learning fundamentals, data structures and algorithms, SQL and relational concepts, and web development" width="100%">
+</picture>
 
 <img src="assets/divider.svg" alt="" width="100%" height="2">
 
@@ -37,6 +43,7 @@ My recent work includes ScoreSense, where I cleaned IPL match-level and ball-by-
         <li>Presented the analysis through a Streamlit application.</li>
       </ul>
       <p><img src="assets/projects/scoresense-stack.svg" alt="ScoreSense technology stack: Python, Pandas, Plotly, and Streamlit" width="100%"></p>
+      <p><sub>Built with: Python · Pandas · Plotly · Streamlit</sub></p>
       <p><a href="https://scoresense-5kzo4sywq2ahzxwoxjqcfh.streamlit.app/">Live demo</a> &nbsp;·&nbsp; <a href="https://github.com/Priyanshu-172969/ScoreSense">Source code</a></p>
     </td>
   </tr>
@@ -51,6 +58,7 @@ My recent work includes ScoreSense, where I cleaned IPL match-level and ball-by-
         <li>Provides itemised budget estimates for journeys from Bengaluru, Kolkata, and New Delhi.</li>
       </ul>
       <p><img src="assets/projects/yatrasetu-stack.svg" alt="YatraSetu technology stack: Python, Flask, MySQL, HTML5, CSS3, and JavaScript" width="100%"></p>
+      <p><sub>Built with: Python · Flask · MySQL · HTML5 · CSS3 · JavaScript</sub></p>
       <p><a href="https://github.com/Priyanshu-172969/YatraSetu-Website">Source code</a></p>
       <p><sub>Local build · not deployed.</sub></p>
     </td>
@@ -61,7 +69,10 @@ My recent work includes ScoreSense, where I cleaned IPL match-level and ball-by-
 
 ## Technology Stack
 
-<img src="assets/stack/technology-stack.svg" alt="Technology stack grouped into languages and querying, web development, databases, data and visualization, and development tools" width="100%">
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/stack/technology-stack-mobile.svg">
+  <img src="assets/stack/technology-stack.svg" alt="Technology stack grouped into languages and querying, web development, databases, data and visualization, and development tools" width="100%">
+</picture>
 
 <details>
   <summary>Read the technology stack as text</summary>
