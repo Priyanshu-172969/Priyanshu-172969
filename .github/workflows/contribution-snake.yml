@@ -1,10 +1,9 @@
-name: Generate contribution snake
+name: Generate profile assets
 
 on:
   schedule:
     - cron: "17 0 * * *"
   workflow_dispatch:
-  # Rebuild once when the workflow itself changes.
   push:
     branches:
       - main
@@ -13,13 +12,26 @@ on:
 
 permissions: {}
 
+concurrency:
+  group: profile-assets-output
+  cancel-in-progress: false
+
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     permissions:
       contents: write
     steps:
+      - name: Check out the output branch
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: output
+          fetch-depth: 0
+
+      - name: Prepare output directory
+        run: mkdir -p dist
+
       - name: Build light and dark contribution snakes
         uses: Platane/snk/svg-only@d8f6715049803e982ee5ff501b6b9b7d5deeb09b
         with:
@@ -28,10 +40,27 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#4CC9F0&color_dots=#161B22,#12394d,#1b6a8a,#2e9bc2,#4cc9f0
 
-      - name: Publish SVGs to the output branch
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@7022eb6bd48de38b092f54110a8ff8185f2ac4a1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: output
+          AUTO_PUSH: false
+          THEME: tokyonight
+
+      - name: Stage language cards for the output branch
+        run: |
+          mkdir -p dist/profile-summary-card-output/tokyonight
+          cp profile-summary-card-output/tokyonight/1-repos-per-language.svg dist/profile-summary-card-output/tokyonight/
+          cp profile-summary-card-output/tokyonight/2-most-commit-language.svg dist/profile-summary-card-output/tokyonight/
+
+      - name: Publish generated assets without rewriting history
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4
         with:
           target_branch: output
           build_dir: dist
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
