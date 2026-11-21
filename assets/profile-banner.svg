@@ -12,29 +12,43 @@
 <rect width="1280" height="300" rx="16" fill="url(#bg)"/>
 <rect width="1280" height="300" rx="16" fill="url(#grid)"/>
 <g filter="url(#blur)">
-  <circle cx="120" cy="50" r="128" fill="url(#cyan)"><animateTransform attributeName="transform" type="translate" values="0 0;35 18;0 0" dur="18s" repeatCount="indefinite"/></circle>
-  <circle cx="1160" cy="260" r="148" fill="url(#violet)"><animateTransform attributeName="transform" type="translate" values="0 0;-34 -14;0 0" dur="18s" repeatCount="indefinite"/></circle>
+  <circle class="glow-cyan" cx="120" cy="50" r="128" fill="url(#cyan)"/>
+  <circle class="glow-violet" cx="1160" cy="260" r="148" fill="url(#violet)"/>
 </g>
 <rect x=".5" y=".5" width="1279" height="299" rx="15.5" fill="none" stroke="#243049"/>
 <g font-family="ui-sans-serif,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif">
   <text x="76" y="122" font-size="46" font-weight="600" letter-spacing="-1.2" fill="#E6EDF3">Priyanshu Kr Bid</text>
   <text x="78" y="165" font-size="18" font-weight="500" fill="#9AA7B8">B.Tech Undergraduate  |  Software Development  |  Data Science  |  AI/ML</text>
-  <text x="78" y="204" font-size="14" fill="#6B778C">Build · analyze · learn.</text>
+  <text x="78" y="204" font-size="14" fill="#9AA7B8">Build · analyze · learn.</text>
 </g>
 <g fill="none" stroke-linecap="round" stroke-linejoin="round">
   <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="2.5" opacity=".55"/>
-  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="520" stroke-dashoffset="520" class="draw"><animate attributeName="stroke-dashoffset" from="520" to="0" dur="2.4s" begin="0s" fill="freeze"/></path>
-  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.10;0" dur="8s" begin="2.4s" repeatCount="indefinite"/></path>
+  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="520" stroke-dashoffset="520" class="draw"/></path>
+  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="5" opacity="0" class="soft-pulse"/></path>
 </g>
 <g fill="#22D3EE">
-  <circle cx="826" cy="205" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="5s" repeatCount="indefinite"/></circle>
-  <circle cx="932" cy="189" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="6s" begin="1s" repeatCount="indefinite"/></circle>
-  <circle cx="1035" cy="150" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="7s" begin="2s" repeatCount="indefinite"/></circle>
-  <circle cx="1153" cy="111" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="8s" begin="3s" repeatCount="indefinite"/></circle>
-  <circle cx="1202" cy="70" r="4" fill="#8B5CF6"><animate attributeName="opacity" values=".25;.8;.25" dur="9s" begin="4s" repeatCount="indefinite"/></circle>
+  <circle class="node node-1" cx="826" cy="205" r="4"/>
+  <circle class="node node-2" cx="932" cy="189" r="4"/>
+  <circle class="node node-3" cx="1035" cy="150" r="4"/>
+  <circle class="node node-4" cx="1153" cy="111" r="4"/>
+  <circle class="node node-5" cx="1202" cy="70" r="4" fill="#8B5CF6"/>
 </g>
 <g stroke="#243049" stroke-width="1" opacity=".8"><path d="M826 230H1202"/><path d="M826 112H1202" stroke-dasharray="3 7"/></g>
 <style>
+@keyframes spark-draw{from{stroke-dashoffset:520}to{stroke-dashoffset:0}}
+@keyframes spark-glow{0%,100%{opacity:0}50%{opacity:.10}}
+@keyframes node-pulse{0%,100%{opacity:.25}50%{opacity:.8}}
+@keyframes cyan-drift{0%,100%{transform:translate(0,0)}50%{transform:translate(35px,18px)}}
+@keyframes violet-drift{0%,100%{transform:translate(0,0)}50%{transform:translate(-34px,-14px)}}
+.draw{animation:spark-draw 2.4s ease-in-out 0s 1 forwards}
+.soft-pulse{animation:spark-glow 8s ease-in-out 2.4s infinite}
+.node-1{animation:node-pulse 5s ease-in-out 0s infinite}
+.node-2{animation:node-pulse 6s ease-in-out 1s infinite}
+.node-3{animation:node-pulse 7s ease-in-out 2s infinite}
+.node-4{animation:node-pulse 8s ease-in-out 3s infinite}
+.node-5{animation:node-pulse 9s ease-in-out 4s infinite}
+.glow-cyan{transform-box:fill-box;transform-origin:center;animation:cyan-drift 18s ease-in-out infinite}
+.glow-violet{transform-box:fill-box;transform-origin:center;animation:violet-drift 18s ease-in-out infinite}
 @media (prefers-reduced-motion: reduce){*{animation:none!important}}
 </style>
 </svg>
