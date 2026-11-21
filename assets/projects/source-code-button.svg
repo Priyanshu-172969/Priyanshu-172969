@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="140" height="36" viewBox="0 0 140 36" role="img" aria-labelledby="t d">
+<title id="t">Source code</title><desc id="d">A dark rounded source code button with a brand-coloured accent.</desc>
+<rect x=".5" y=".5" width="139" height="35" rx="18" fill="#111827" stroke="#243049"/>
+<rect x="1.5" y="8" width="3" height="20" rx="1.5" fill="#22D3EE"/>
+<text x="70" y="23" text-anchor="middle" font-family="ui-sans-serif,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif" font-size="13" font-weight="600" fill="#E6EDF3">Source code</text></svg>
