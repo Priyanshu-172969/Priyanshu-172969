@@ -58,7 +58,7 @@ I’m an undergraduate building foundations in software development, data scienc
     <td colspan="2">
       <h3>YatraSetu · Indian Heritage Explorer &amp; Trip Planner</h3>
       <img src="assets/status/local-build.svg" alt="Local build, not deployed" width="204" height="28">
-      <p>An Indian heritage explorer and trip planner built with Flask and MySQL.</p>
+      <p>A platform for exploring Indian heritage destinations and planning trips.</p>
       <ul>
         <li>Uses a five-table relational schema to manage destinations and trip plans.</li>
         <li>Supports SQL reporting with joins, aggregates, grouping, and subqueries.</li>
