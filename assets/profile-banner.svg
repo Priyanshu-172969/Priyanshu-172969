@@ -1,53 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240" role="img" aria-labelledby="banner-title banner-desc">
-  <title id="banner-title">Priyanshu Kr Bid, B.Tech undergraduate</title>
-  <desc id="banner-desc">B.Tech undergraduate exploring software development, data science and AI/ML. An abstract arch and chart motif sits on the right.</desc>
-
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1020"/>
-      <stop offset="1" stop-color="#131C36"/>
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#4CC9F0"/>
-      <stop offset="1" stop-color="#8B7CF6"/>
-    </linearGradient>
-    <linearGradient id="accent-v" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#4CC9F0"/>
-      <stop offset="1" stop-color="#8B7CF6"/>
-    </linearGradient>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="2" cy="2" r="1" fill="#2A3556" opacity="0.6"/>
-    </pattern>
-  </defs>
-
-  <!-- Background -->
-  <rect width="1200" height="240" rx="14" fill="url(#bg)"/>
-  <rect width="1200" height="240" rx="14" fill="url(#dots)"/>
-  <rect x="0.5" y="0.5" width="1199" height="239" rx="14" fill="none" stroke="#24304D"/>
-
-  <!-- Text block -->
-  <rect x="56" y="62" width="4" height="116" rx="2" fill="url(#accent-v)"/>
-  <g font-family="'Segoe UI', Inter, -apple-system, 'Helvetica Neue', Arial, sans-serif">
-    <text x="84" y="116" font-size="56" font-weight="700" fill="#E6EDF7" letter-spacing="-1">Priyanshu Kr Bid</text>
-    <text x="86" y="154" font-size="20" font-weight="500" fill="#4CC9F0">B.Tech Undergraduate | Software Development</text>
-    <text x="86" y="184" font-size="17" fill="#8B98B5">Exploring Data Science, AI/ML and practical applications.</text>
-  </g>
-
-  <!-- Arch over bars -->
-  <g fill="none" stroke-linecap="round">
-    <path d="M770 200 H1110" stroke="#2A3556" stroke-width="1.5"/>
-    <path d="M790 200 A150 150 0 0 1 1090 200" stroke="url(#accent)" stroke-width="2" opacity="0.30"/>
-    <path d="M830 200 A110 110 0 0 1 1050 200" stroke="url(#accent)" stroke-width="2" opacity="0.55"/>
-    <path d="M870 200 A70 70 0 0 1 1010 200" stroke="url(#accent)" stroke-width="2.5"/>
-  </g>
-  <circle cx="790" cy="200" r="4" fill="#4CC9F0"/>
-  <circle cx="1090" cy="200" r="4" fill="#8B7CF6"/>
-  <g>
-    <rect x="898" y="184" width="9" height="16" rx="1.5" fill="#4CC9F0" opacity="0.35"/>
-    <rect x="913" y="174" width="9" height="26" rx="1.5" fill="#4CC9F0" opacity="0.45"/>
-    <rect x="928" y="180" width="9" height="20" rx="1.5" fill="#4CC9F0" opacity="0.55"/>
-    <rect x="943" y="164" width="9" height="36" rx="1.5" fill="#4CC9F0" opacity="0.70"/>
-    <rect x="958" y="170" width="9" height="30" rx="1.5" fill="#4CC9F0" opacity="0.85"/>
-    <rect x="973" y="156" width="9" height="44" rx="1.5" fill="#8B7CF6"/>
-  </g>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="300" viewBox="0 0 1280 300" role="img" aria-labelledby="title desc">
+<title id="title">Priyanshu Kr Bid | Data Science and Software Development</title>
+<desc id="desc">A restrained dark banner with the name Priyanshu Kr Bid, undergraduate headline, Build analyze learn tagline, and a subtle animated analytics sparkline.</desc>
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0B0F19"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22D3EE"/><stop offset=".52" stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+  <radialGradient id="cyan"><stop stop-color="#22D3EE" stop-opacity=".20"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+  <radialGradient id="violet"><stop stop-color="#8B5CF6" stop-opacity=".16"/><stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/></radialGradient>
+  <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity=".04" stroke-width="1"/></pattern>
+  <filter id="blur"><feGaussianBlur stdDeviation="36"/></filter>
+</defs>
+<rect width="1280" height="300" rx="16" fill="url(#bg)"/>
+<rect width="1280" height="300" rx="16" fill="url(#grid)"/>
+<g filter="url(#blur)">
+  <circle cx="120" cy="50" r="128" fill="url(#cyan)"><animateTransform attributeName="transform" type="translate" values="0 0;35 18;0 0" dur="18s" repeatCount="indefinite"/></circle>
+  <circle cx="1160" cy="260" r="148" fill="url(#violet)"><animateTransform attributeName="transform" type="translate" values="0 0;-34 -14;0 0" dur="18s" repeatCount="indefinite"/></circle>
+</g>
+<rect x=".5" y=".5" width="1279" height="299" rx="15.5" fill="none" stroke="#243049"/>
+<g font-family="ui-sans-serif,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif">
+  <text x="76" y="122" font-size="46" font-weight="600" letter-spacing="-1.2" fill="#E6EDF3">Priyanshu Kr Bid</text>
+  <text x="78" y="165" font-size="18" font-weight="500" fill="#9AA7B8">B.Tech Undergraduate  |  Software Development  |  Data Science  |  AI/ML</text>
+  <text x="78" y="204" font-size="14" fill="#6B778C">Build · analyze · learn.</text>
+</g>
+<g fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="2.5" opacity=".55"/>
+  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="2.5" stroke-dasharray="520" stroke-dashoffset="520" class="draw"><animate attributeName="stroke-dashoffset" from="520" to="0" dur="2.4s" begin="0s" fill="freeze"/></path>
+  <path d="M826 205 L884 177 L932 189 L985 133 L1035 150 L1090 96 L1153 111 L1202 70" stroke="url(#accent)" stroke-width="5" opacity="0"><animate attributeName="opacity" values="0;.10;0" dur="8s" begin="2.4s" repeatCount="indefinite"/></path>
+</g>
+<g fill="#22D3EE">
+  <circle cx="826" cy="205" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="5s" repeatCount="indefinite"/></circle>
+  <circle cx="932" cy="189" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="6s" begin="1s" repeatCount="indefinite"/></circle>
+  <circle cx="1035" cy="150" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="7s" begin="2s" repeatCount="indefinite"/></circle>
+  <circle cx="1153" cy="111" r="4"><animate attributeName="opacity" values=".25;.8;.25" dur="8s" begin="3s" repeatCount="indefinite"/></circle>
+  <circle cx="1202" cy="70" r="4" fill="#8B5CF6"><animate attributeName="opacity" values=".25;.8;.25" dur="9s" begin="4s" repeatCount="indefinite"/></circle>
+</g>
+<g stroke="#243049" stroke-width="1" opacity=".8"><path d="M826 230H1202"/><path d="M826 112H1202" stroke-dasharray="3 7"/></g>
+<style>
+@media (prefers-reduced-motion: reduce){*{animation:none!important}}
+</style>
 </svg>
