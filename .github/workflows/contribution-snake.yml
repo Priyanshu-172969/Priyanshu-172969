@@ -54,7 +54,6 @@ jobs:
         run: |
           mkdir -p dist/profile-summary-card-output/tokyonight
           cp profile-summary-card-output/tokyonight/1-repos-per-language.svg dist/profile-summary-card-output/tokyonight/
-          cp profile-summary-card-output/tokyonight/2-most-commit-language.svg dist/profile-summary-card-output/tokyonight/
 
       - name: Publish generated assets without rewriting history
         uses: crazy-max/ghaction-github-pages@1d6ee9b181a81033a16bd707a1401afa978daab4
