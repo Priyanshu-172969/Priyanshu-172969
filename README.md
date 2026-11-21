@@ -13,7 +13,7 @@
 
 ## About Me
 
-I build applications around data and structured information. Recent work includes ScoreSense, an IPL analytics dashboard, and YatraSetu, an Indian heritage trip planner; I'm currently studying statistics, machine learning, algorithms, SQL, and web development.
+My recent work includes ScoreSense, where I cleaned IPL match-level and ball-by-ball data for an interactive dashboard, and YatraSetu, a Flask and MySQL heritage trip planner with a five-table schema. I’m currently studying statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development.
 
 <img src="assets/divider.svg" alt="" width="100%" height="2">
 
@@ -63,8 +63,16 @@ I build applications around data and structured information. Recent work include
 
 <img src="assets/stack/technology-stack.svg" alt="Technology stack grouped into languages and querying, web development, databases, data and visualization, and development tools" width="100%">
 
-<p><sub>Also know: C and C++</sub></p>
-<img src="assets/stack/also-know.svg" alt="C and C++" width="330" height="46">
+<details>
+  <summary>Read the technology stack as text</summary>
+
+  - **Languages and querying:** Python, JavaScript, SQL
+  - **Web development:** HTML5, CSS3, Flask
+  - **Database:** MySQL
+  - **Data and visualization:** Pandas, Plotly, Streamlit
+  - **Tools:** Git, GitHub, VS Code, MySQL Workbench
+  - **Also know:** C, C++
+</details>
 
 <img src="assets/divider.svg" alt="" width="100%" height="2">
 
@@ -80,7 +88,7 @@ I build applications around data and structured information. Recent work include
 
 ## Connect With Me
 
-<p>
+<p align="center">
   <a href="mailto:priyanshubid3@gmail.com"><img src="assets/connect/email.svg" alt="Email Priyanshu" width="140" height="36"></a>
   &nbsp;
   <a href="https://instagram.com/priyanshu____1729"><img src="assets/connect/instagram.svg" alt="Instagram profile" width="140" height="36"></a>
