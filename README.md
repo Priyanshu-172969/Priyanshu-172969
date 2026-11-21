@@ -15,7 +15,7 @@
 <div align="center">
   <picture>
     <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg">
-    <img src="assets/terminal.svg" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, Hindi, and basic German." width="760">
+    <img src="assets/terminal.svg" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, Hindi, and basic German." width="100%">
   </picture>
 </div>
 
@@ -45,10 +45,14 @@ I’m an undergraduate building foundations in software development, data scienc
         <li>Built interactive Plotly charts for team and player performance.</li>
         <li>Presented the analysis through a Streamlit application.</li>
       </ul>
-      <p><img src="assets/projects/scoresense-stack.svg" alt="ScoreSense technology stack: Python, Pandas, Plotly, and Streamlit" width="100%"></p>
       <a href="https://github.com/Priyanshu-172969/ScoreSense">
         <img src="assets/projects/source-code-button.svg" alt="ScoreSense source code" width="140" height="36">
       </a>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      <p><img src="assets/projects/scoresense-stack.svg" alt="ScoreSense technology stack: Python, Pandas, Plotly, and Streamlit" width="100%"></p>
     </td>
   </tr>
 </table>
