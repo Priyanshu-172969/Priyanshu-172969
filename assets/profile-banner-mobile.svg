@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="360" viewBox="0 0 720 360" role="img" aria-labelledby="t d">
+<title id="t">Priyanshu Kr Bid | Undergraduate | Software Development, Data Science and AI/ML</title>
+<desc id="d">A compact dark profile banner with Priyanshu Kr Bid's name, undergraduate headline, Build analyze learn tagline, and a static analytics sparkline.</desc>
+<defs>
+  <linearGradient id="bgm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#0B0F19"/><stop offset="1" stop-color="#111827"/></linearGradient>
+  <linearGradient id="accentm" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#22D3EE"/><stop offset=".52" stop-color="#3B82F6"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient>
+  <radialGradient id="glowm"><stop stop-color="#22D3EE" stop-opacity=".18"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+  <pattern id="gridm" width="24" height="24" patternUnits="userSpaceOnUse"><path d="M24 0H0V24" fill="none" stroke="#FFFFFF" stroke-opacity=".04"/></pattern>
+</defs>
+<rect width="720" height="360" rx="16" fill="url(#bgm)"/>
+<rect width="720" height="360" rx="16" fill="url(#gridm)"/>
+<circle cx="95" cy="32" r="148" fill="url(#glowm)"/>
+<rect x=".5" y=".5" width="719" height="359" rx="15.5" fill="none" stroke="#243049"/>
+<g font-family="ui-sans-serif,Segoe UI,Inter,Roboto,Helvetica,Arial,sans-serif">
+  <text x="48" y="112" font-size="48" font-weight="600" letter-spacing="-1.1" fill="#E6EDF3">Priyanshu Kr Bid</text>
+  <text x="50" y="174" font-size="24" font-weight="500" fill="#9AA7B8">B.Tech Undergraduate</text>
+  <text x="50" y="210" font-size="22" font-weight="500" fill="#9AA7B8">Software Development | Data Science | AI/ML</text>
+  <text x="50" y="258" font-size="18" fill="#9AA7B8">Build · analyze · learn.</text>
+</g>
+<g fill="none" stroke="url(#accentm)" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" opacity=".8">
+  <path d="M470 326 L515 307 L552 316 L590 291 L628 300 L674 272"/>
+</g>
+<g fill="#22D3EE">
+  <circle cx="470" cy="326" r="4"/><circle cx="552" cy="316" r="4"/><circle cx="628" cy="300" r="4"/>
+  <circle cx="674" cy="272" r="4" fill="#8B5CF6"/>
+</g>
+</svg>
