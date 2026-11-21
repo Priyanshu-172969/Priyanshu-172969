@@ -49,23 +49,32 @@ jobs:
               path = Path("dist") / name
               svg = path.read_text(encoding="utf-8")
               if "<title" not in svg:
-                  svg = svg.replace(
+                  svg_start = svg.find("<svg")
+                  svg_end = svg.find(">", svg_start)
+                  if svg_start < 0 or svg_end < 0:
+                      raise ValueError(f"Missing SVG root in {name}")
+                  root = svg[svg_start:svg_end + 1].replace(
                       "<svg ",
                       '<svg role="img" aria-labelledby="snakeTitle snakeDesc" ',
                       1,
                   )
-                  svg = svg.replace(
-                      "><desc>",
-                      '><title id="snakeTitle">GitHub contribution snake</title>'
-                      '<desc id="snakeDesc">A visual representation of GitHub contribution activity.</desc>',
-                      1,
+                  svg = svg[:svg_start] + root + svg[svg_end + 1:]
+                  desc_start = svg.find("<desc")
+                  desc_open_end = svg.find(">", desc_start)
+                  desc_end = svg.find("</desc>", desc_open_end)
+                  if desc_start < 0 or desc_open_end < 0 or desc_end < 0:
+                      raise ValueError(f"Missing original description in {name}")
+                  labels = (
+                      '<title id="snakeTitle">GitHub contribution snake</title>'
+                      '<desc id="snakeDesc">A visual representation of GitHub contribution activity.</desc>'
                   )
+                  svg = svg[:desc_start] + labels + svg[desc_end + len("</desc>"):]
               if "prefers-reduced-motion: reduce" not in svg:
-                  svg = svg.replace(
-                      "</style>",
-                      "@media (prefers-reduced-motion: reduce){*{animation:none!important}}\n</style>",
-                      1,
-                  )
+                  style_end = svg.find("</style>")
+                  if style_end < 0:
+                      raise ValueError(f"Missing SVG styles in {name}")
+                  rule = "@media (prefers-reduced-motion: reduce){*{animation:none!important}}" + chr(10)
+                  svg = svg[:style_end] + rule + svg[style_end:]
               path.write_text(svg, encoding="utf-8")
           PY
 
