@@ -40,6 +40,35 @@ jobs:
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#4CC9F0&color_dots=#161B22,#12394d,#1b6a8a,#2e9bc2,#4cc9f0
 
+      - name: Add accessible labels and reduced-motion support to snakes
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          for name in ("github-snake.svg", "github-snake-dark.svg"):
+              path = Path("dist") / name
+              svg = path.read_text(encoding="utf-8")
+              if "<title" not in svg:
+                  svg = svg.replace(
+                      "<svg ",
+                      '<svg role="img" aria-labelledby="snakeTitle snakeDesc" ',
+                      1,
+                  )
+                  svg = svg.replace(
+                      "><desc>",
+                      '><title id="snakeTitle">GitHub contribution snake</title>'
+                      '<desc id="snakeDesc">A visual representation of GitHub contribution activity.</desc>',
+                      1,
+                  )
+              if "prefers-reduced-motion: reduce" not in svg:
+                  svg = svg.replace(
+                      "</style>",
+                      "@media (prefers-reduced-motion: reduce){*{animation:none!important}}\\n</style>",
+                      1,
+                  )
+              path.write_text(svg, encoding="utf-8")
+          PY
+
       - name: Generate profile summary cards
         uses: vn7n24fzkq/github-profile-summary-cards@7022eb6bd48de38b092f54110a8ff8185f2ac4a1
         env:
