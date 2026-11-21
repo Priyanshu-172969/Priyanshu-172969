@@ -38,8 +38,8 @@
 
 <div align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg">
-    <img src="assets/terminal.svg" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, and Hindi." width="100%">
+    <source media="(max-width: 600px)" srcset="assets/terminal-mobile.svg?v=2">
+    <img src="assets/terminal.svg?v=2" alt="Terminal introduction. whoami: Priyanshu Kr Bid. focus: software development, data science, and AI/ML. learning: statistics and probability, machine learning fundamentals, data structures and algorithms, SQL, and web development. speaks: English, Bengali, and Hindi." width="100%">
   </picture>
 </div>
 
