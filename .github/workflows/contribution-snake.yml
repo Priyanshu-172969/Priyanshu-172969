@@ -87,7 +87,7 @@ jobs:
 
           path = Path("profile-summary-card-output/tokyonight/1-repos-per-language.svg")
           svg = path.read_text(encoding="utf-8")
-          match = re.search(r"<svg\\b[^>]*>", svg)
+          match = re.search(r"<svg\b[^>]*>", svg)
           if match and "<title" not in svg:
               root = match.group(0).replace(
                   "<svg ",
